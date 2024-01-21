@@ -1,0 +1,45 @@
+1.api for registering a new user
+   
+    url:http://127.0.0.1:8000/api/register/
+    method:post
+    data:{username,email,password}
+    authorization:nill
+
+2.api for fetching token
+
+    url:http://127.0.0.1:8000/api/token/
+    method:post
+    data:{username,password}
+    authorization:nill
+
+3.api for fetching all products
+
+    url:http://127.0.0.1:8000/api/movies/
+    method:get
+    data:nill
+    authorization:Token
+
+4.api for fetching specific product detail
+
+    url:http://127.0.0.1:8000/api/movies/{id}/
+    method:get
+    data:nill
+    authorization:Token
+
+
+
+5. api for adding a specific review to movies
+    url:http://127.0.0.1:8000/api/movies/{id}/review_add/
+
+    method:post
+    data:{title}
+    authorization:Token
+
+
+6. api for listing a specific review to movies
+
+    url:http://127.0.0.1:8000/api/movies/{id}/review_list/
+
+    method:post
+    data:nill
+    authorization:Token
