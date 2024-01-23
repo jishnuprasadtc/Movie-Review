@@ -6,6 +6,7 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.routers import DefaultRouter
 router=DefaultRouter()
 router.register("movies",views.MovieView,basename="movies")
+router.register("movies/review",views.ReviewView,basename="movie-review")
 
 
 

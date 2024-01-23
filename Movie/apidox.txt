@@ -43,3 +43,21 @@
     method:post
     data:nill
     authorization:Token
+
+
+
+
+
+7. api for updating basketitem 
+
+    url: http://127.0.0.1:8000/api/movies/review/{id}/
+    method:put
+    data qty
+    authorization-token
+
+8. delete /remove an item(from cart/basket item)
+
+    url: http://127.0.0.1:8000/api/movies/review/{id}/
+    method:delete
+    data :nill
+    authorization-token

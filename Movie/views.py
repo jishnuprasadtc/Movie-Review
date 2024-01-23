@@ -48,6 +48,15 @@ class MovieView(ModelViewSet):
         return Response(data=serializer.data)
     
 
+class ReviewView(ModelViewSet):
+    serializer_class=MovieReviewserializer
+    queryset=Review.objects.all()
+    authentication_classes=[authentication.TokenAuthentication]
+    permission_classes=[permissions.IsAuthenticated]
+
+
+
+
 
 
         
